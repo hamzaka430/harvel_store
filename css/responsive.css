@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+      
+      /* General responsive styles */
+       @media (max-width: 1200px) {
+        .container {
+          max-width: 100%;
+          padding: 0 15px;
+        }
+      }
+      
+      
+      /* About section responsive styles */
+      @media (max-width: 767px) {
+        #about-row {
+          flex-direction: column;
+        }
+        
+        .image-about img {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 20px;
+        }
+        
+        .text-about {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+      
+      /* Blog section responsive styles */
+      @media (max-width: 767px) {
+        #blog-row {
+          flex-direction: column;
+        }
+        
+        .col-md-4 {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+
+      /* Breadcrumb responsive styles */
+      @media (max-width: 991px) {
+        .flat-breadcrumb {
+          padding: 8px 0;
+        }
+        
+        .breadcrumbs {
+          font-size: 13px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .flat-breadcrumb {
+          padding: 6px 0;
+        }
+        
+        .breadcrumbs li.trail-item a {
+          font-size: 12px;
+        }
+        
+        .trail-item img {
+          width: 10px;
+          height: auto;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .flat-breadcrumb {
+          padding: 5px 0;
+        }
+        
+        .breadcrumbs {
+          flex-wrap: wrap;
+          gap: 2px;
+        }
+        
+        .breadcrumbs li.trail-item {
+          margin: 1px 2px;
+        }
+        
+        .breadcrumbs li.trail-item a {
+          font-size: 11px;
+          padding: 2px 4px;
+          border-radius: 3px;
+          background-color: #f8f9fa;
+        }
+      }
+
+      @media (max-width: 320px) {
+        .breadcrumbs li.trail-item a {
+          font-size: 10px;
+          max-width: 50px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      
+      
